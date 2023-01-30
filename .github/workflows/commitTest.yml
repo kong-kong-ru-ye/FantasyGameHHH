@@ -1,4 +1,4 @@
-name: Commit Testing
+name: 提交测试并打包
 
 on: [push]
 
