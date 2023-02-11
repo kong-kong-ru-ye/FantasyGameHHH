@@ -1,4 +1,4 @@
-package huanxiang.type;
+package huanxiang;
 
 
 import arc.graphics.Color;
