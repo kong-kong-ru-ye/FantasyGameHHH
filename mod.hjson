@@ -2,7 +2,7 @@ displayName: "幻想"
 name: "huanxiang"
 author: "自由"
 main: "huanxiang.HXMOD"
-description: "一个测试mod"
-version: 0.0.2
-minGameVersion: 140.1
+description: "相当于一个前置mod"
+version: 0.0.1
+minGameVersion: 140.2
 java: true
