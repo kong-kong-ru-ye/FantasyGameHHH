@@ -37,7 +37,6 @@ public class HiddenLiquid extends Liquid {
 	}
 	@Override
 	  public void  setStats() {
-		if(属性){return super.isHidden();}
-		return;
+		if(属性) super.isHidden();
 	}
 }

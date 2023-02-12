@@ -37,7 +37,7 @@ public class HiddenItem extends Item {
 	}
 	@Override
 	  public void  setStats() {
-		if(属性){return super.isHidden();}
-		return;
+		if(属性)super.isHidden();
+		
 	}
 }
