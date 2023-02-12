@@ -29,7 +29,7 @@ public class AttributeOutputheatGenericCrafter extends GenericCrafter {
     public float heatOutput = 10f;//输出热量
     public float warmupRate = 0.15f;//预热率
 
-    public GenericCrafter2(String name) {
+    public AttributeOutputheatGenericCrafter(String name) {
         super(name);
 
         drawer = new DrawMulti(new DrawDefault(), new DrawHeatOutput());
@@ -55,12 +55,12 @@ public class AttributeOutputheatGenericCrafter extends GenericCrafter {
 
         if(!displayEfficiency) return;
 
-        addBar("efficiency", (GenericCrafter2.GenericCrafter2Build entity) ->
+        addBar("efficiency", (AttributeOutputheatGenericCrafter.AttributeOutputheatGenericCrafterBuild entity) ->
                 new Bar(
                         () -> Core.bundle.format("bar.efficiency", (int)(entity.efficiencyMultiplier() * 100 * displayEfficiencyScale)),
                         () -> Pal.lightOrange,
                         entity::efficiencyMultiplier));
-        addBar("heat", (GenericCrafter2.GenericCrafter2Build entity) -> new Bar("bar.heat", Pal.lightOrange, () -> entity.heat / heatOutput));
+        addBar("heat", (AttributeOutputheatGenericCrafter.AttributeOutputheatGenericCrafterBuild entity) -> new Bar("bar.heat", Pal.lightOrange, () -> entity.heat / heatOutput));
     }
 
     @Override
@@ -78,7 +78,7 @@ public class AttributeOutputheatGenericCrafter extends GenericCrafter {
 
     }
 
-    public class GenericCrafter2Build extends GenericCrafterBuild implements HeatBlock {
+    public class AttributeOutputheatGenericCrafterBuild extends GenericCrafterBuild implements HeatBlock {
         public float attrsum;
         public float heat;
 

@@ -23,7 +23,7 @@ public class AttributeInputheatGenericCrafter extends GenericCrafter {
     public float overheatScale = 1f;//过热刻度
     public float maxEfficiency = 4f;//最大效率
 
-    public GenericCrafter1(String name) {
+    public AttributeInputheatGenericCrafter(String name) {
         super(name);
     }
 
@@ -43,13 +43,13 @@ public class AttributeInputheatGenericCrafter extends GenericCrafter {
 
         if (!displayEfficiency)
             return;
-        addBar("efficiency", (GenericCrafter1.GenericCrafter1Build entity) ->
+        addBar("efficiency", (AttributeInputheatGenericCrafter.AttributeInputheatGenericCrafterBuild entity) ->
                 new Bar(
                         () -> Core.bundle.format("bar.efficiency", (int) (entity.efficiencyMultiplier() * 100 * displayEfficiencyScale)),
                         () -> Pal.lightOrange,
                         entity::efficiencyMultiplier));
 
-        addBar("heat", (GenericCrafter1.GenericCrafter1Build entity) ->
+        addBar("heat", (AttributeInputheatGenericCrafter.AttributeInputheatGenericCrafterBuild entity) ->
                 new Bar(() ->
                         Core.bundle.format("bar.heatpercent", (int) (entity.heat + 0.00001f), (int) (entity.efficiencyScale() * 100 + 0.0001f)),
                         () -> Pal.lightOrange,
@@ -72,7 +72,7 @@ public class AttributeInputheatGenericCrafter extends GenericCrafter {
         stats.add(Stat.maxEfficiency, (int) (maxEfficiency * 100f), StatUnit.percent);
     }
 
-    public class GenericCrafter1Build extends GenericCrafterBuild implements HeatConsumer {
+    public class AttributeInputheatGenericCrafterBuild extends GenericCrafterBuild implements HeatConsumer {
         public float attrsum;
         public float[] sideHeat = new float[4];
         public float heat = 0f;

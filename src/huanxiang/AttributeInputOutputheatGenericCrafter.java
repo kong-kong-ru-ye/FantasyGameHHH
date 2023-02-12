@@ -37,7 +37,7 @@ public class AttributeInputOutputheatGenericCrafter extends GenericCrafter {
 
 
 
-    public GenericCrafter3(String name) {
+    public AttributeInputOutputheatGenericCrafter(String name) {
         super(name);
 
         drawer = new DrawMulti(new DrawDefault(), new DrawHeatOutput());
@@ -64,17 +64,17 @@ public class AttributeInputOutputheatGenericCrafter extends GenericCrafter {
 
         if (!displayEfficiency) return;
 
-        addBar("efficiency", (GenericCrafter3.GenericCrafter3Build entity) ->
+        addBar("efficiency", (AttributeInputOutputheatGenericCrafter.AttributeInputOutputheatGenericCrafterBuild entity) ->
                 new Bar(
                         () -> Core.bundle.format("bar.efficiency", (int) (entity.efficiencyMultiplier() * 100 * displayEfficiencyScale)),
                         () -> Pal.lightOrange,
                         entity::efficiencyMultiplier));
-        addBar("heat", (GenericCrafter3.GenericCrafter3Build entity) ->
+        addBar("heat", (AttributeInputOutputheatGenericCrafter.AttributeInputOutputheatGenericCrafterBuild entity) ->
                 new Bar(() ->
                         Core.bundle.format("bar.heatpercent", (int) (entity.heat1 + 0.00001f), (int) (entity.efficiencyScale() * 100 + 0.0001f)),
                         () -> Pal.lightOrange,
                         () -> entity.heat1 / heatRequirement));
-        addBar("heat1", (GenericCrafter3.GenericCrafter3Build entity) -> new Bar("bar.heat", Pal.lightOrange, () -> entity.heat / heatOutput));
+        addBar("heat1", (AttributeInputOutputheatGenericCrafter.AttributeInputOutputheatGenericCrafterBuild entity) -> new Bar("bar.heat", Pal.lightOrange, () -> entity.heat / heatOutput));
     }
 
     @Override
@@ -93,7 +93,7 @@ public class AttributeInputOutputheatGenericCrafter extends GenericCrafter {
         stats.add(Stat.output, heatOutput, StatUnit.heatUnits);
     }
 
-    public class GenericCrafter3Build extends GenericCrafterBuild implements HeatBlock, HeatConsumer {
+    public class AttributeInputOutputheatGenericCrafterBuild extends GenericCrafterBuild implements HeatBlock, HeatConsumer {
         public float attrsum;
         public float[] sideHeat = new float[4];
         public float heat1 = 0f;
