@@ -103,7 +103,7 @@ public class AttributeInputOutputheatGenericCrafter extends GenericCrafter {
             heat1 = calculateHeat(sideHeat);
 
             super.updateTile();
-            heat = Mathf.approachDelta(heat, heatOutput * efficiency, warmupRate * delta());
+            heat = Mathf.approachDelta(heat, heatOutput * efficiency, warmupRate * delta())*efficiencyMultiplier();
         }
 
         @Override
@@ -152,7 +152,7 @@ public class AttributeInputOutputheatGenericCrafter extends GenericCrafter {
 
         @Override
         public float getProgressIncrease(float base) {
-            return super.getProgressIncrease(base) * efficiencyMultiplier();
+            return super.getProgressIncrease(base) * efficiencyMultiplier()*efficiencyScale();
         }
 
         public float efficiencyMultiplier() {

@@ -86,7 +86,7 @@ public class AttributeInputheatGenericCrafter extends GenericCrafter {
 
         @Override
         public float getProgressIncrease(float base) {
-            return super.getProgressIncrease(base) * efficiencyMultiplier();
+            return super.getProgressIncrease(base) * efficiencyMultiplier()*efficiencyScale();
         }
 
         public float efficiencyMultiplier() {
@@ -105,6 +105,12 @@ public class AttributeInputheatGenericCrafter extends GenericCrafter {
 
             attrsum = sumAttribute(attribute, tile.x, tile.y);
         }
+
+
+
+
+
+
 
         @Override
         public float heatRequirement() {

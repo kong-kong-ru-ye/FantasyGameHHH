@@ -86,7 +86,7 @@ public class AttributeOutputheatGenericCrafter extends GenericCrafter {
         public void updateTile() {
             super.updateTile();
 
-            heat = Mathf.approachDelta(heat, heatOutput * efficiency, warmupRate * delta());
+            heat = Mathf.approachDelta(heat, heatOutput * efficiency, warmupRate * delta())* efficiencyMultiplier();
         }
 
         @Override
@@ -110,6 +110,11 @@ public class AttributeOutputheatGenericCrafter extends GenericCrafter {
             super.read(read, revision);
             heat = read.f();
         }
+
+
+
+
+
 
 
         @Override
