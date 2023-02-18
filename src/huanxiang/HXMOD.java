@@ -2,7 +2,7 @@ package huanxiang;
 
 import mindustry.mod.Mod;
 
-import static huanxiang.core.HXSpecial.HXModJS.HXMods;
+import static huanxiang.core.HXSpecial.HXModJS;
 
 public class HXMOD extends Mod {
 
@@ -18,7 +18,7 @@ public static String ModName = "hx";
     
     @Override
     public void loadContent() {
-         HXMods();
+         HXModJS.HXMods();
     
     
    
