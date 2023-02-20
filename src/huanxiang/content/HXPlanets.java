@@ -1,20 +1,5 @@
 package huanxiang.content;
-
-import arc.graphics.Color;
-import huanxiang.type.HXPlanet;
-import mindustry.content.Blocks;
-import mindustry.content.Items;
-import mindustry.content.Planets;
-import mindustry.game.Team;
-import mindustry.graphics.g3d.HexMesh;
-import mindustry.graphics.g3d.HexSkyMesh;
-import mindustry.graphics.g3d.MultiMesh;
-import mindustry.graphics.g3d.SunMesh;
-import mindustry.maps.planet.ErekirPlanetGenerator;
-import mindustry.maps.planet.TantrosPlanetGenerator;
-import mindustry.type.Planet;
-import mindustry.world.meta.Attribute;
-import mindustry.world.meta.Env;
+public class HXPlanets {};
 /*
 public class HXPlanets {
     public static Planet
