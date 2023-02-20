@@ -15,7 +15,7 @@ import mindustry.maps.planet.TantrosPlanetGenerator;
 import mindustry.type.Planet;
 import mindustry.world.meta.Attribute;
 import mindustry.world.meta.Env;
-
+/*
 public class HXPlanets {
     public static Planet
             ZXCVZXVCZV,
@@ -128,4 +128,4 @@ public class HXPlanets {
     }
 
 
-}
+*/
