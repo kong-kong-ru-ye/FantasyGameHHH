@@ -362,8 +362,6 @@ public class 重写 {
         }
 
         public static class 力墙场 extends ForceFieldAbility {
-            public int 边数 = 6;
-            public float 角度 = 0f;
             public 力墙场(float 半径, float 恢复速度, float max, float 冷却时间) {
                 super(半径, 恢复速度, max, 冷却时间);
 
