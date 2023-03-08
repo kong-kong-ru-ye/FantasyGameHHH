@@ -43,40 +43,40 @@ public class 重写 {
 
         public 物品(String name) {
             super(name);
-            super.color = 颜色;
-            super.explosiveness = 爆炸性;
-            super.flammability = 燃烧性;
-            super.radioactivity = 放射性;
-            super.charge = 放电性;
-            super.hardness = 挖掘等级;
-            super.cost = 建筑时间成本;
-            super.healthScaling = 建筑生命倍率;
-            super.lowPriority = 优先级;
-            super.frames = 材质数量;
-            super.transitionFrames = 过渡帧;
-            super.frameTime = 材质帧;
-            super.buildable = 建筑;
-            super.hidden = 隐藏;
-            super.hiddenOnPlanets = 行星隐藏;
+            color = 颜色;
+            explosiveness = 爆炸性;
+            flammability = 燃烧性;
+            radioactivity = 放射性;
+            charge = 放电性;
+            hardness = 挖掘等级;
+            cost = 建筑时间成本;
+            healthScaling = 建筑生命倍率;
+            lowPriority = 优先级;
+            frames = 材质数量;
+            transitionFrames = 过渡帧;
+            frameTime = 材质帧;
+            buildable = 建筑;
+            hidden = 隐藏;
+            hiddenOnPlanets = 行星隐藏;
         }
 
         public 物品(String name, Color color) {
             super(name, color);
-            super.color = 颜色;
-            super.explosiveness = 爆炸性;
-            super.flammability = 燃烧性;
-            super.radioactivity = 放射性;
-            super.charge = 放电性;
-            super.hardness = 挖掘等级;
-            super.cost = 建筑时间成本;
-            super.healthScaling = 建筑生命倍率;
-            super.lowPriority = 优先级;
-            super.frames = 材质数量;
-            super.transitionFrames = 过渡帧;
-            super.frameTime = 材质帧;
-            super.buildable = 建筑;
-            super.hidden = 隐藏;
-            super.hiddenOnPlanets = 行星隐藏;
+            color = 颜色;
+            explosiveness = 爆炸性;
+            flammability = 燃烧性;
+            radioactivity = 放射性;
+            charge = 放电性;
+            hardness = 挖掘等级;
+            cost = 建筑时间成本;
+            healthScaling = 建筑生命倍率;
+            lowPriority = 优先级;
+            frames = 材质数量;
+            transitionFrames = 过渡帧;
+            frameTime = 材质帧;
+            buildable = 建筑;
+            hidden = 隐藏;
+            hiddenOnPlanets = 行星隐藏;
         }
 
         @Override
@@ -92,7 +92,7 @@ public class 重写 {
         @Override
         public void setStats() {
             if (属性) {
-                super.setStats();
+                setStats();
             }
 
         }
@@ -128,54 +128,54 @@ public class 重写 {
 
         public 流体(String name) {
             super(name);
-            super.gas = 气体;
-            super.color = 基础颜色;
-            super.gasColor = 气体颜色;
-            super.barColor = bar颜色;
-            super.lightColor = 发光颜色;
-            super.flammability = 燃烧性;
-            super.temperature = 温度;
-            super.heatCapacity = 热容量;
-            super.viscosity = 粘度;
-            super.explosiveness = 爆炸性;
-            super.blockReactive = 块反应;
-            super.coolant = 冷却液;
-            super.moveThroughBlocks = 方块中移动;
-            super.incinerable = 可焚烧;
-            super.effect = 状态;
-            super.particleEffect = 流水效果;
-            super.particleSpacing = 粒子效应速率间距;
-            super.boilPoint = 蒸发温度;
-            super.capPuddles = 流水上限;
-            super.vaporEffect = 液体蒸发效果;
-            super.hidden = 隐藏;
-            super.canStayOn = 可停留液体;
+            gas = 气体;
+            color = 基础颜色;
+            gasColor = 气体颜色;
+            barColor = bar颜色;
+            lightColor = 发光颜色;
+            flammability = 燃烧性;
+            temperature = 温度;
+            heatCapacity = 热容量;
+            viscosity = 粘度;
+            explosiveness = 爆炸性;
+            blockReactive = 块反应;
+            coolant = 冷却液;
+            moveThroughBlocks = 方块中移动;
+            incinerable = 可焚烧;
+            effect = 状态;
+            particleEffect = 流水效果;
+            particleSpacing = 粒子效应速率间距;
+            boilPoint = 蒸发温度;
+            capPuddles = 流水上限;
+            vaporEffect = 液体蒸发效果;
+            hidden = 隐藏;
+            canStayOn = 可停留液体;
         }
 
         public 流体(String name, Color color) {
             super(name, color);
-            super.gas = 气体;
-            super.color = 基础颜色;
-            super.gasColor = 气体颜色;
-            super.barColor = bar颜色;
-            super.lightColor = 发光颜色;
-            super.flammability = 燃烧性;
-            super.temperature = 温度;
-            super.heatCapacity = 热容量;
-            super.viscosity = 粘度;
-            super.explosiveness = 爆炸性;
-            super.blockReactive = 块反应;
-            super.coolant = 冷却液;
-            super.moveThroughBlocks = 方块中移动;
-            super.incinerable = 可焚烧;
-            super.effect = 状态;
-            super.particleEffect = 流水效果;
-            super.particleSpacing = 粒子效应速率间距;
-            super.boilPoint = 蒸发温度;
-            super.capPuddles = 流水上限;
-            super.vaporEffect = 液体蒸发效果;
-            super.hidden = 隐藏;
-            super.canStayOn = 可停留液体;
+            gas = 气体;
+            color = 基础颜色;
+            gasColor = 气体颜色;
+            barColor = bar颜色;
+            lightColor = 发光颜色;
+            flammability = 燃烧性;
+            temperature = 温度;
+            heatCapacity = 热容量;
+            viscosity = 粘度;
+            explosiveness = 爆炸性;
+            blockReactive = 块反应;
+            coolant = 冷却液;
+            moveThroughBlocks = 方块中移动;
+            incinerable = 可焚烧;
+            effect = 状态;
+            particleEffect = 流水效果;
+            particleSpacing = 粒子效应速率间距;
+            boilPoint = 蒸发温度;
+            capPuddles = 流水上限;
+            vaporEffect = 液体蒸发效果;
+            hidden = 隐藏;
+            canStayOn = 可停留液体;
         }
 
         @Override
@@ -191,7 +191,7 @@ public class 重写 {
         @Override
         public void setStats() {
             if (属性) {
-                super.setStats();
+                setStats();
             }
 
         }
@@ -217,10 +217,10 @@ public class 重写 {
 
             public 修复抑制场(float 冷却时间, float 半径) {
                 super();
-                super.reload = 冷却时间;
-                super.range = 半径;
-                super.x = x;
-                super.y = y;
+                reload = 冷却时间;
+                range = 半径;
+                x = x;
+                y = y;
             }
         }
 
@@ -235,13 +235,13 @@ public class 重写 {
 
             public 状态场(StatusEffect 状态, float 状态持续时间, float 冷却时间, float 范围) {
                 super(状态, 状态持续时间, 冷却时间, 范围);
-                super.onShoot = 攻击中使用;
-                super.applyEffect = 应用效果;
-                super.activeEffect = 主动效果;
-                super.effectX = 效果X;
-                super.effectY = 效果Y;
-                super.parentizeEffects = 产兵效果;
-                super.effectSizeParam = 效果大小参数;
+                onShoot = 攻击中使用;
+                applyEffect = 应用效果;
+                activeEffect = 主动效果;
+                effectX = 效果X;
+                effectY = 效果Y;
+                parentizeEffects = 产兵效果;
+                effectSizeParam = 效果大小参数;
             }
         }
 
@@ -252,7 +252,7 @@ public class 重写 {
 
             public 死亡单位生成(UnitType 单位, int 数量, int 边缘数量, float 生成范围) {
                 super(单位, 数量, 生成范围);
-                super.randAmount = 边缘数量;
+                randAmount = 边缘数量;
 
             }
 
@@ -280,21 +280,21 @@ public class 重写 {
             protected float 宽度缩放, 透明度;
 
             public 弧形护盾() {
-                super.radius = 半径;
-                super.regen = 再生;
-                super.max = 最大;
-                super.cooldown = 冷却时间;
-                super.angle = 角度;
-                super.angleOffset = 角度偏移;
-                super.x = x;
-                super.y = y;
-                super.whenShooting = 攻击激活;
-                super.width = 宽;
-                super.drawArc = 绘制弧形;
-                super.region = 贴图;
-                super.offsetRegion = 贴图跟随xy;
-                super.widthScale = 宽度缩放;
-                super.alpha = 透明度;
+                radius = 半径;
+                regen = 再生;
+                max = 最大;
+                cooldown = 冷却时间;
+                angle = 角度;
+                angleOffset = 角度偏移;
+                x = x;
+                y = y;
+                whenShooting = 攻击激活;
+                width = 宽;
+                drawArc = 绘制弧形;
+                region = 贴图;
+                offsetRegion = 贴图跟随xy;
+                widthScale = 宽度缩放;
+                alpha = 透明度;
             }
 
         }
@@ -310,25 +310,25 @@ public class 重写 {
             public float 每帧固定量 = 0f;
 
             public 再生(float 每帧百分比, float 每帧固定量) {
-                super.percentAmount = 每帧百分比;
-                super.amount = 每帧固定量;
+                percentAmount = 每帧百分比;
+                amount = 每帧固定量;
             }
 
             public 再生() {
-                super.percentAmount = 每帧百分比;
-                super.amount = 每帧固定量;
+                percentAmount = 每帧百分比;
+                amount = 每帧固定量;
             }
         }
 
         public static class 移动闪电 extends MoveLightningAbility {
             public 移动闪电(float 伤害, int 长度, float 概率, float x, float y, float 最小速度, float 最大速度, Color 颜色, String 发热区域) {
                 super(伤害, 长度, 概率, y, 最小速度, 最大速度, 颜色, 发热区域);
-                super.x = x;
+                x = x;
             }
 
             public 移动闪电(float 伤害, int 长度, float 概率, float x, float y, float 最小速度, float 最大速度, Color 颜色) {
                 super(伤害, 长度, 概率, y, 最小速度, 最大速度, 颜色);
-                super.x = x;
+                x = x;
             }
         }
 
@@ -344,20 +344,20 @@ public class 重写 {
         public static class 液体再生 extends LiquidRegenAbility {
             /*？？？？？？？？？？？？？*/
             public 液体再生(Liquid 流体, float 吸收速度, float 每次量, float 效果几率, Effect 效果) {
-                super.liquid = 流体;
-                super.slurpSpeed = 吸收速度;
-                super.regenPerSlurp = 每次量;
-                super.slurpEffectChance = 效果几率;
-                super.slurpEffect = 效果;
+                liquid = 流体;
+                slurpSpeed = 吸收速度;
+                regenPerSlurp = 每次量;
+                slurpEffectChance = 效果几率;
+                slurpEffect = 效果;
             }
         }
 
         public static class 液体爆炸 extends LiquidExplodeAbility {
             public 液体爆炸(Liquid 流体, float 数量, float 辐射量刻度, float 辐射标度) {
-                super.liquid = 流体;
-                super.amount = 数量;
-                super.radAmountScale = 辐射量刻度;
-                super.radScale = 辐射标度;
+                liquid = 流体;
+                amount = 数量;
+                radAmountScale = 辐射量刻度;
+                radScale = 辐射标度;
             }
         }
 
@@ -368,8 +368,8 @@ public class 重写 {
             }
             public 力墙场(float 半径, float 恢复速度, float max, float 冷却时间,int 边数, float 角度) {
                 super(半径, 恢复速度, max, 冷却时间);
-                super.sides = 边数;
-                super.rotation = 角度;
+                sides = 边数;
+                rotation = 角度;
 
             }
 
@@ -382,19 +382,19 @@ public class 重写 {
 
             public 能量场(float 伤害, float 冷却时间, float 范围, StatusEffect 状态, float 持续时间, float x, float y, int max, float 治愈百分比) {
                 super(伤害, 冷却时间, 范围);
-                super.status = 状态;
-                super.statusDuration = 持续时间;
-                super.x = x;
-                super.y = y;
-                super.maxTargets = max;
-                super.healPercent = 治愈百分比;
+                status = 状态;
+                statusDuration = 持续时间;
+                x = x;
+                y = y;
+                maxTargets = max;
+                healPercent = 治愈百分比;
             }
 
         }
 
         public static class 装甲板 extends ArmorPlateAbility {
             public 装甲板(float 健康乘数) {
-                super.healthMultiplier = 健康乘数;
+                healthMultiplier = 健康乘数;
 
             }
         }
@@ -427,32 +427,32 @@ public class 重写 {
 
         public 地图(String name, Planet planet, int sector) {
             super(name, planet, sector);
-            super.captureWave = 占领波数;
-            super.difficulty = 难度;
-            super.startWaveTimeMultiplier = 启动波数时间倍增器;
-            super.addStartingItems = 添加起始资源;
-            super.noLighting = 无照明;
-            super.isLastSector = 最后一个;
-            super.showSectorLandInfo = 显示地图信息;
-            super.overrideLaunchDefaults = 覆盖默认值;
-            super.allowLaunchSchematics = 自定义示意图;
-            super.allowLaunchLoadout = 启动配装;
-            super.attackAfterWaves = 占领后攻击模式;
+            captureWave = 占领波数;
+            difficulty = 难度;
+            startWaveTimeMultiplier = 启动波数时间倍增器;
+            addStartingItems = 添加起始资源;
+            noLighting = 无照明;
+            isLastSector = 最后一个;
+            showSectorLandInfo = 显示地图信息;
+            overrideLaunchDefaults = 覆盖默认值;
+            allowLaunchSchematics = 自定义示意图;
+            allowLaunchLoadout = 启动配装;
+            attackAfterWaves = 占领后攻击模式;
         }
 
         public 地图(String name) {
             super(name);
-            super.captureWave = 占领波数;
-            super.difficulty = 难度;
-            super.startWaveTimeMultiplier = 启动波数时间倍增器;
-            super.addStartingItems = 添加起始资源;
-            super.noLighting = 无照明;
-            super.isLastSector = 最后一个;
-            super.showSectorLandInfo = 显示地图信息;
-            super.overrideLaunchDefaults = 覆盖默认值;
-            super.allowLaunchSchematics = 自定义示意图;
-            super.allowLaunchLoadout = 启动配装;
-            super.attackAfterWaves = 占领后攻击模式;
+            captureWave = 占领波数;
+            difficulty = 难度;
+            startWaveTimeMultiplier = 启动波数时间倍增器;
+            addStartingItems = 添加起始资源;
+            noLighting = 无照明;
+            isLastSector = 最后一个;
+            showSectorLandInfo = 显示地图信息;
+            overrideLaunchDefaults = 覆盖默认值;
+            allowLaunchSchematics = 自定义示意图;
+            allowLaunchLoadout = 启动配装;
+            attackAfterWaves = 占领后攻击模式;
         }
     }
 
