@@ -368,22 +368,13 @@ public class 重写 {
 //            public float max = 200f;
 //            public float 冷却时间 = 60f * 5;
 //
-//            public int 边数 = 6;
-//            public float 角度 = 0f;
+           public int 边数 = 6;
+           public float 角度 = 0f;
 
             public 力墙场(float 半径, float 恢复速度, float max, float 冷却时间) {
                 super(半径, 恢复速度, max, 冷却时间);
-
-            }
-
-            public 力墙场(float 半径, float 恢复速度, float 容量, float 冷却时间, int 边数, float 角度) {
-                super(半径,  恢复速度,  容量,  冷却时间, 边数,  角度);
-//                radius = 半径;
-//                regen = 恢复速度;
-//                max = 容量;
-//                cooldown = 冷却时间;
-//                sides = 边数;
-//                rotation = 角度;
+                sides = 边数;
+             rotation = 角度;
 
             }
 
