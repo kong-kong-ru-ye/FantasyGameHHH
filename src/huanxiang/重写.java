@@ -370,10 +370,11 @@ public class 重写 {
                 super.sides = 边数;
                 super.rotation = 角度;
 */
-            }/*
+            }
+
             public 力墙场(float 半径, float 恢复速度, float max, float 冷却时间, int 边数, float 角度){
-                super(半径, 恢复速度, max, 冷却时间,边数,角度);
-            }*/
+                super( 半径,  恢复速度,  max,  冷却时间,  边数,  角度);
+            }
 
         }
 
